@@ -39,9 +39,11 @@ public class Plump : MonoBehaviour
             
         if (isRolling)
         {
-            roll.clip = rolling;
-            roll.Play();
+            if (!roll.isPlaying)
+                roll.Play();
         }
+        else
+            roll.Stop();
 
     }
 
