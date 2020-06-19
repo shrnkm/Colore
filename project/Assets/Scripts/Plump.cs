@@ -19,7 +19,8 @@ public class Plump : MonoBehaviour
     {
         // get the player object
         pl = GetComponent<Rigidbody>();
-        pl.GetComponent<Renderer>().material.color = new Color(250, 0, 0, 0);
+        //pl.GetComponent<Renderer>().material.color = new Color(6, 194, 172, 0);
+        pl.GetComponent<Material>().color = new Color(166, 194, 172, 0);
     }
     
     void Update()
@@ -32,18 +33,18 @@ public class Plump : MonoBehaviour
         
         
         // player movement sound effect
-        if ((moveHorizontal != 0) || (moveVertical != 0))
-            isRolling = true;
-        else
-            isRolling = false;
-            
-        if (isRolling)
-        {
-            if (!roll.isPlaying)
-                roll.Play();
-        }
-        else
-            roll.Stop();
+        //if ((moveHorizontal != 0) || (moveVertical != 0))
+        //    isRolling = true;
+        //else
+        //    isRolling = false;
+        //    
+        //if (isRolling)
+        //{
+        //    if (!roll.isPlaying)
+        //        roll.Play();
+        //}
+        //else
+        //    roll.Stop();
 
     }
 
