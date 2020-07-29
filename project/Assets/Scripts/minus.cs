@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class minus : MonoBehaviour
+public class Minus : MonoBehaviour
 {
     private Rigidbody minusPrf;
     private Renderer rendMP;
-    private static Color mcls;
+    public static Color mclr;
     
     Color[] colors = new Color[3];
     
@@ -22,7 +22,7 @@ public class minus : MonoBehaviour
         // get the player object
         minusPrf = GetComponent<Rigidbody>();
         rendMP = minusPrf.GetComponent<Renderer>();
-        mcls = colors[Random.Range(0, colors.Length)];
-        rendMP.material.color = mcls;
+        mclr = colors[Random.Range(0, colors.Length)];
+        rendMP.material.color = mclr;
     }
 }

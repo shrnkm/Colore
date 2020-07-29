@@ -5,12 +5,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
-public class plus : MonoBehaviour
+public class Plus : MonoBehaviour
 {
     
     private Rigidbody plusPrf;
     private Renderer rendPP;
-    private static Color pcls;
+    public static Color pclr;
     
     Color[] colors = new Color[3];
     
@@ -25,8 +25,8 @@ public class plus : MonoBehaviour
         // get the player object
         plusPrf = GetComponent<Rigidbody>();
         rendPP = plusPrf.GetComponent<Renderer>();
-        pcls = colors[Random.Range(0, colors.Length)];
-        rendPP.material.color = pcls;
+        pclr = colors[Random.Range(0, colors.Length)];
+        rendPP.material.color = pclr;
     }
 
     // Update is called once per frame
