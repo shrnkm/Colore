@@ -18,8 +18,8 @@ public class Plump : MonoBehaviour
         // get the player object
         pl = GetComponent<Rigidbody>();
         rend = pl.GetComponent<Renderer>();
-        rend.material.SetColor("_Color", new Color( 1, 1, 1, 1));
-        
+        rend.material.color = new Color(0f, 0f, 0f);
+
     }
     
     void Update()
@@ -28,7 +28,10 @@ public class Plump : MonoBehaviour
         float moveHorizontal = Input.GetAxis ("Horizontal");
         float moveVertical = Input.GetAxis ("Vertical");
         Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
-        pl.position = pl.position + 0.2f * movement;
+        pl.position = pl.position + 0.2f * 2 * movement;
+        
+        
+        
     }
 
     void FixedUpdate()

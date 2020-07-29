@@ -9,7 +9,9 @@
         <e p="Scripts" t="Include">
           <e p="camera.cs" t="Include" />
           <e p="Generator.cs" t="Include" />
+          <e p="minus.cs" t="Include" />
           <e p="Plump.cs" t="Include" />
+          <e p="plus.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
