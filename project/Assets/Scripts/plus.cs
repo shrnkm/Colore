@@ -7,7 +7,6 @@ using Random = UnityEngine.Random;
 
 public class Plus : MonoBehaviour
 {
-    
     private Rigidbody plusPrf;
     private Renderer rendPP;
     public static Color pclr;
@@ -27,11 +26,5 @@ public class Plus : MonoBehaviour
         rendPP = plusPrf.GetComponent<Renderer>();
         pclr = colors[Random.Range(0, colors.Length)];
         rendPP.material.color = pclr;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -12,6 +12,7 @@
           <e p="minus.cs" t="Include" />
           <e p="Plump.cs" t="Include" />
           <e p="plus.cs" t="Include" />
+          <e p="Spawner.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

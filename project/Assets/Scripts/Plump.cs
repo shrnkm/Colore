@@ -44,7 +44,7 @@ public class Plump : MonoBehaviour
                 if (clr[0] < 1)
                 {
                     clr = new Color (clr[0]+.1f, clr[1],clr[2]);
-                    Debug.Log(clr);
+                    Destroy(other.gameObject);
                 }
                 else
                 {
@@ -57,7 +57,7 @@ public class Plump : MonoBehaviour
                 if (clr[1] < 1)
                 {
                     clr = new Color(clr[0], clr[1] + .1f, clr[2]);
-                    Debug.Log(clr);
+                    Destroy(other.gameObject);
                 }
                 else
                 {
@@ -70,7 +70,7 @@ public class Plump : MonoBehaviour
                 if (clr[2] < 1)
                 {
                     clr = new Color(clr[0], clr[1], clr[2] + .1f);
-                    Debug.Log(clr);
+                    Destroy(other.gameObject);
                 }
                 else
                 {
@@ -87,7 +87,7 @@ public class Plump : MonoBehaviour
                     if (clr[0] > 0)
                     {
                         clr = new Color(clr[0] - .1f, clr[1], clr[2]);
-                        Debug.Log(clr);
+                        Destroy(other.gameObject);
                     }
                     else
                     {
@@ -100,7 +100,7 @@ public class Plump : MonoBehaviour
                     if (clr[1] > 0)
                     {
                         clr = new Color(clr[0], clr[1] - .1f, clr[2]);
-                        Debug.Log(clr);
+                        Destroy(other.gameObject);
                     }
                     else
                     {
@@ -113,7 +113,7 @@ public class Plump : MonoBehaviour
                     if (clr[2] > 0)
                     {
                         clr = new Color(clr[0], clr[1], clr[2] - .1f);
-                        Debug.Log(clr);
+                        Destroy(other.gameObject);
                     }
                     else
                     {
