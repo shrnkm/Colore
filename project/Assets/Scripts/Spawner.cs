@@ -12,20 +12,37 @@ public class Spawner : MonoBehaviour
 
     void Start()
     {
-        locations[0] = new Vector3(-15,2.5f,-15);
-        locations[1] = new Vector3(-15,2.5f,15);
-        locations[2] = new Vector3(15,2.5f,-15);
-        locations[3] = new Vector3(15,2.5f,15);
-        locations[4] = new Vector3(27,2,0);
-        locations[5] = new Vector3(0,2,27);
-        locations[6] = new Vector3(-27,2,0);
-        locations[7] = new Vector3(0,2,-27);
-
-        Vector3 vec = locations[3];
         
-        Debug.Log(vec);
-        //Instantiate(plus, locations[Random.Range(0, locations.Length)], Quaternion.identity);
-        Instantiate(plus, vec, Quaternion.identity);
+        InvokeRepeating(nameof(CreateColors), 0, 5f);
+    }
+
+    void CreateColors()
+    {
+        var plus1 = Instantiate(plus, new Vector3(Random.Range(-90,90), 2.5f, Random.Range(-90,90)),
+                        Quaternion.Euler(45,4,300));
+        Destroy(plus1.gameObject, 5);
+        var plus2 = Instantiate(plus, new Vector3(Random.Range(-90,90), 2.5f, Random.Range(-90,90)),
+                        Quaternion.Inverse(default));
+        Destroy(plus2.gameObject, 5);
+        var plus3 = Instantiate(plus, new Vector3(Random.Range(-90,90), 2.5f, Random.Range(-90,90)),
+                                Quaternion.identity);
+        Destroy(plus3.gameObject, 5);
+        var plus4 = Instantiate(plus, new Vector3(Random.Range(-90,90), 2.5f, Random.Range(-90,90)),
+                        Quaternion.Inverse(default));
+        Destroy(plus4.gameObject, 5);
+        
+        var minus1 = Instantiate(minus, new Vector3(Random.Range(-90,90), 2.5f, Random.Range(-90,90)),
+                         Quaternion.Inverse(default));
+        Destroy(minus1.gameObject, 5);
+        var minus2 = Instantiate(minus, new Vector3(Random.Range(-90,90), 2.5f, Random.Range(-90,90)),
+                                 Quaternion.identity);
+        Destroy(minus2.gameObject, 5);
+        var minus3 = Instantiate(minus, new Vector3(Random.Range(-90,90), 2.5f, Random.Range(-90,90)),
+                         Quaternion.Inverse(default));
+        Destroy(minus3.gameObject, 5);
+        var minus4 = Instantiate(minus, new Vector3(Random.Range(-90,90), 2.5f, Random.Range(-90,90)),
+                                 Quaternion.identity);
+        Destroy(minus4.gameObject, 5);
     }
     
 }
