@@ -71,6 +71,8 @@
     <Compile Include="Assets\Scripts\Plump.cs" />
     <Compile Include="Assets\Scripts\Plus.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\StateColor.cs" />
+    <Compile Include="Assets\Scripts\TargetColor.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Colore/project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

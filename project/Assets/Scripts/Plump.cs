@@ -11,7 +11,7 @@ public class Plump : MonoBehaviour
     // player
     private Rigidbody pl;
     private Renderer rend;
-    private static Color clr;
+    public static Color clr;
 
 
     void Start()
@@ -45,7 +45,6 @@ public class Plump : MonoBehaviour
                 {
                     clr = new Color (clr[0]+.1f, clr[1],clr[2]);
                     Destroy(other.gameObject);
-                    Debug.Log(clr);
                 }
                 else
                 {
@@ -60,7 +59,6 @@ public class Plump : MonoBehaviour
                 {
                     clr = new Color(clr[0], clr[1] + .1f, clr[2]);
                     Destroy(other.gameObject);
-                    Debug.Log(clr);
                 }
                 else
                 {
@@ -74,7 +72,6 @@ public class Plump : MonoBehaviour
                 {
                     clr = new Color(clr[0], clr[1], clr[2] + .1f);
                     Destroy(other.gameObject);
-                    Debug.Log(clr);
                 }
                 else
                 {
@@ -92,7 +89,6 @@ public class Plump : MonoBehaviour
                     {
                         clr = new Color(clr[0] - .1f, clr[1], clr[2]);
                         Destroy(other.gameObject);
-                        Debug.Log(clr);
                     }
                     else
                     {
@@ -106,7 +102,6 @@ public class Plump : MonoBehaviour
                     {
                         clr = new Color(clr[0], clr[1] - .1f, clr[2]);
                         Destroy(other.gameObject);
-                        Debug.Log(clr);
                     }
                     else
                     {
@@ -120,7 +115,6 @@ public class Plump : MonoBehaviour
                     {
                         clr = new Color(clr[0], clr[1], clr[2] - .1f);
                         Destroy(other.gameObject);
-                        Debug.Log(clr);
                     }
                     else
                     {

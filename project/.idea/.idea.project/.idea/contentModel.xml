@@ -13,6 +13,8 @@
           <e p="Plump.cs" t="Include" />
           <e p="plus.cs" t="Include" />
           <e p="Spawner.cs" t="Include" />
+          <e p="StateColor.cs" t="Include" />
+          <e p="TargetColor.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

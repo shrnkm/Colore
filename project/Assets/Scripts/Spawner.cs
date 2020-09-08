@@ -30,6 +30,18 @@ public class Spawner : MonoBehaviour
         var plus4 = Instantiate(plus, new Vector3(Random.Range(-90,90), 2.5f, Random.Range(-90,90)),
                         Quaternion.Inverse(default));
         Destroy(plus4.gameObject, 5);
+        var plus5 = Instantiate(plus, new Vector3(Random.Range(-90,90), 2.5f, Random.Range(-90,90)),
+            Quaternion.Euler(45,4,300));
+        Destroy(plus5.gameObject, 5);
+        var plus6 = Instantiate(plus, new Vector3(Random.Range(-90,90), 2.5f, Random.Range(-90,90)),
+            Quaternion.Inverse(default));
+        Destroy(plus6.gameObject, 5);
+        var plus7 = Instantiate(plus, new Vector3(Random.Range(-90,90), 2.5f, Random.Range(-90,90)),
+            Quaternion.identity);
+        Destroy(plus7.gameObject, 5);
+        var plus8 = Instantiate(plus, new Vector3(Random.Range(-90,90), 2.5f, Random.Range(-90,90)),
+            Quaternion.Inverse(default));
+        Destroy(plus8.gameObject, 5);
         
         var minus1 = Instantiate(minus, new Vector3(Random.Range(-90,90), 2.5f, Random.Range(-90,90)),
                          Quaternion.Inverse(default));
