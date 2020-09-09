@@ -10,6 +10,7 @@ public class StateColor : MonoBehaviour
     public Image stateImage;
     void Start()
     {
+        
     }
 
     // Update is called once per frame

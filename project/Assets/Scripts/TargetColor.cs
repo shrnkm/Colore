@@ -17,6 +17,7 @@ public class TargetColor : MonoBehaviour
         var blue = Random.value;
         
         target = new Color (red, green, blue);
+        target = new Color (.3f, .2f, .4f);
         targetImage.color = target;
     }
 
